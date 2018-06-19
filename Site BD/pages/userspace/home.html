@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Site BD</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+        <script src="../../js/jquery-3.2.1.min.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/qrcode.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="overlay1">
+            <div class="novo-grupo">
+                <h2>Criar grupo</h2><br>
+                <span>Nome do grupo:</span><br>
+                <input class="ngrupo" placeholder="Nome do grupo"><br><br>
+                <span>Nome da organização:</span><br>
+                <input class="norganizacao" placeholder="Nome da organização"><br>
+                <button class="criargrupo" tabindex="-1">Criar</button>
+            </div>
+        </div>
+        <div class="overlay2">
+            <div class="lista-membros">
+                <table>
+                </table>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="grupos">
+                <div class="header">
+                    <h1 class="logo">MMM</h1>
+                    <h1>Meus grupos</h1><br>
+                    <h4 class="user-data"><span>Logado como </span><span class="username"></span></h4>
+                </div>
+                <button class="adicionar" tabindex="-1"><ion-icon name="add-circle"></ion-icon>Criar</button>
+                <div class="sub">
+                    
+                </div>
+            </div>
+    
+            <div class="content">
+                <button class="voltar" tabindex="-1">Voltar</button>
+                
+                <div class="sub">
+                    <div class="subdiv">
+                        <h2>Grupo: <span class="nome-grupo"></span></h2><br>
+                        <h4>Data:</h4>
+                        <input type="date" tabindex="-1" readonly class="data disabled"><br><br>
+                        <h4>Hora início:</h4>
+                        <input type="time" tabindex="-1" readonly class="horaini disabled"><br><br>
+                        <h4>Hora término:</h4>
+                        <input type="time" tabindex="-1" class="horafim"><br><br>
+                        <h4>Local:</h4>
+                        <input type="text" tabindex="-1" class="local" placeholder="Local"><br><br>
+                        <span class="alert">Reunião em andamento!</span><br><br>
+                        <button class="btnConfirmar" tabindex="-1">Criar</button>
+                        <button class="btnCancelar disabled" tabindex="-1" disabled>Cancelar</button>
+                    </div>
+                    <div class="subdiv">
+                        <div id="qrcode"></div>
+                        <button class="btnListar disabled" tabindex="-1" disabled>Listar membros</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
